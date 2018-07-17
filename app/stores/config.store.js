@@ -1,6 +1,6 @@
 import firebase from 'firebase'
 
-var config = {
+const config = {
     apiKey: "AIzaSyDFqkVF9xpLxFHcjGAtldQs3qofdGoUSwA",
     authDomain: "mathmeal.firebaseapp.com",
     databaseURL: "https://mathmeal.firebaseio.com",
