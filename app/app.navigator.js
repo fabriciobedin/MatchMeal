@@ -3,6 +3,8 @@ import { DrawerNavigator, StackNavigator } from 'react-navigation';
 import SplashScreen from './screens/splash.screen';
 import LoginScreen from './screens/login.screen';
 import MatchScreen from './screens/match.screen';
+import PostScreen from './screens/post.screen';
+
 const Splash = {
   screen: SplashScreen,
   navigationOptions: {
@@ -23,8 +25,16 @@ const Match = {
     drawerLabel: 'Matches'
   }
 }
+const Post = {
+  screen: PostScreen,
+  navigationOptions: {
+    headerMode: 'screen',
+    headerTitle: 'Post'
+  }
+}
 const MatchStack = StackNavigator({
-  Match: Match
+  Match: Match,
+  Post: Post
 },{})
 const RouteConfig = {
   initialRoute: 'Splash'

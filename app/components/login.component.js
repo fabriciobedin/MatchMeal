@@ -42,9 +42,10 @@ export default class Login extends Component {
           <Input style={{color: "#fff"}}
             placeholder='Please Enter Password'
             placeholderTextColor="#fff"
+            secureTextEntry={true}
             onChangeText={(pass) => this.password = pass}/>
         </Item>
-        <Button rounded block style={{marginBottom:10}}
+        <Button rounded block style={{marginBottom: 10}}
           onPress={this.signIn.bind(this)}>
           <Text>Login</Text>
         </Button>
